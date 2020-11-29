@@ -12,7 +12,7 @@ export class ApiService {
 
   sentOrder(order: string): void {
     // tslint:disable-next-line:only-arrow-functions typedef
-    this.http.post<any>(`add/order`, order).subscribe(function(data) {
+    this.http.post<any>(`reverse`, order).subscribe(function(data) {
       console.log(data);
     });
   }
